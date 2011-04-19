@@ -1,0 +1,27 @@
+jShaker is a simple jQuery plugin which runs a shake, vibrate effect on a selected web page element and all its children emulating an shaker effect.
+
+It was original developed by ajaxblender.com ( you can see their website right here http://www.ajaxblender.com/jshaker.html ) but it was lacking a method to stop the shaking animation so that's what Ive added :) .
+
+HOW TO USE IT:
+
+1) Add jQuery to your project :
+<script src="jquery-1.4.2.min.js" type="text/javascript"></script> 
+
+2) Add jShaker to your project 
+<script src="jshaker.js" type="text/javascript"></script>
+
+3) Start shaking like this ;) :
+
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.block').click(function(){
+          $(this).jshaker();
+	     });
+	     });
+</script>
+
+3.1) to stop the animation : $(".block").jshaker.stop() 
+
+4) Find a good use, remember then this thing could slow down your browser so be careful.
+
+
